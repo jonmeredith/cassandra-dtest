@@ -162,7 +162,7 @@ class BaseReplaceAddressTest(Tester):
                                    .format(self.replacement_node.address_for_current_version_slashy(),
                                            self.replaced_node.address_for_current_version_slashy()),
                                    timeout=60, filename='debug.log')
-                node.watch_log_for("Node {} will complete replacement of {}{} for tokens"
+                node.watch_log_for("Node {} will complete replacement of {} for tokens"
                                    .format(self.replacement_node.address_for_current_version_slashy(),
                                            self.replaced_node.address_for_current_version_slashy()), timeout=10)
                 node.watch_log_for("removing endpoint {}".format(self.replaced_node.address_for_current_version_slashy()),
